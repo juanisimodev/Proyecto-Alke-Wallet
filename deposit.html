@@ -4,8 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alke Wallet - Depositar Fondos</title>
-  <link class="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  
+  <!-- CORRECCIÓN AQUÍ: Se cambió 'class' por 'rel' -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+  <!-- CORRECCIÓN AQUÍ: Se eliminó el espacio extra al final de 'styles.css' -->
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -19,7 +23,7 @@
     <form id="depositForm">
       <div class="form-group">
         <label for="amount">Monto específico a depositar ($):</label>
-        <input type="number" id="amount" class="form-control form-control-lg" placeholder="Ej: 5000" Required min="1">
+        <input type="number" id="amount" class="form-control form-control-lg" placeholder="Ej: 5000" required min="1">
       </div>
       
       <div id="alert-container"></div>
