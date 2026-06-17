@@ -1,5 +1,5 @@
 /**
- * Gestión de Depósitos e Incremento de Activos (Lección 5 y 6)
+ * Gestión de Depósitos e Incremento de Activos 
  */
 $(document).ready(function() {
   // Lectura y renderizado inicial del dinero disponible

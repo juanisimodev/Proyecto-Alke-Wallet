@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alke Wallet - Menú Principal</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid mx-md-5">
+      <a class="navbar-brand" href="menu.html">
+        <i class="fas fa-wallet mr-2 text-primary"></i>Alke Wallet
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="menu.html"><i class="fas fa-home mr-1"></i> Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="deposit.html"><i class="fas fa-money-bill-wave mr-1"></i> Depositar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sendmoney.html"><i class="fas fa-paper-plane mr-1"></i> Enviar Dinero</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="transactions.html"><i class="fas fa-history mr-1"></i> Movimientos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-danger" href="login.html"><i class="fas fa-sign-out-alt mr-1"></i> Salir</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container container-main mt-5 pt-4">
+    <div class="text-center mb-4">
+      <h1 class="display-4 font-weight-bold text-dark">¡Hola, Admin!</h1>
+      <p class="text-muted">Bienvenido al panel de control de tu dinero digital</p>
+    </div>
+    
+    <div class="card p-4 my-4 shadow-sm border-0 bg-light text-center">
+      <h2 class="h5 text-muted text-tracking mb-2">Balance Total Disponible</h2>
+      <p id="balance" class="display-4 font-weight-bold text-primary mb-0">$0.00</p>
+    </div>
+
+    <div id="redirectMessage" class="alert alert-info text-center d-none shadow-sm"></div>
+
+    <div class="row mt-4">
+      <div class="col-md-4 my-2">
+        <button id="btnDeposit" class="btn btn-success btn-block py-3 shadow-sm btn-action">
+          <i class="fas fa-arrow-down d-block mb-2 fa-2x"></i> Depositar Fondos
+        </button>
+      </div>
+      <div class="col-md-4 my-2">
+        <button id="btnSend" class="btn btn-primary btn-block py-3 shadow-sm btn-action">
+          <i class="fas fa-paper-plane d-block mb-2 fa-2x"></i> Enviar Dinero
+        </button>
+      </div>
+      <div class="col-md-4 my-2">
+        <button id="btnTransactions" class="btn btn-secondary btn-block py-3 shadow-sm btn-action">
+          <i class="fas fa-list-ul d-block mb-2 fa-2x"></i> Últimos Movimientos
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="assets/js/menu.js"></script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 /**
- * Control de Agenda, Filtros en tiempo real y Transferencias (Lección 5 y 6)
+ * Control de Agenda, Filtros en tiempo real y Transferencias 
  */
 $(document).ready(function() {
   
