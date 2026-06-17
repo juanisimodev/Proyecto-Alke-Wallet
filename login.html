@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alke Wallet - Iniciar Sesión</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="text-center mb-4">
+      <i class="fas fa-wallet fa-3x text-primary mb-2"></i>
+      <h1>Iniciar Sesión</h1>
+      <p class="text-muted">Ingresa a tu billetera digital Alke Wallet</p>
+    </div>
+
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="username"><i class="fas fa-user mr-1"></i> Usuario / Username:</label>
+        <input type="text" id="username" class="form-control" placeholder="admin" required>
+      </div>
+      <div class="form-group">
+        <label for="password"><i class="fas fa-lock mr-1"></i> Contraseña / Password:</label>
+        <input type="password" id="password" class="form-control" placeholder="12345" required>
+      </div>
+      
+      <div id="alert-container" class="my-3"></div>
+
+      <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/login.js"></script>
+</body>
+</html>
